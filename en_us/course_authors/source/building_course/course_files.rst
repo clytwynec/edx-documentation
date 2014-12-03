@@ -4,17 +4,21 @@
 Adding Files to a Course
 ###########################
 
+To use images in your course content, or to use other documents such as a
+syllabus, you must upload and add the files to your course.
+
 
 *******************
 Overview
 *******************
 
-To use images in your course content, or to use other documents such as a
-syllabus, you must add the files to your course.
+You can manage your uploaded course files on the **Files and Uploads** page
+under the **Content** menu in Studio.
 
 * :ref:`Add a File`
 * :ref:`File URLs`
 * :ref:`Sort Files`
+* :ref:`Filter Files`
 * :ref:`Find Files`
 * :ref:`Lock a File`
 * :ref:`Delete a File`
@@ -26,9 +30,9 @@ syllabus, you must add the files to your course.
 Add a File
 *******************
  
-You can add files that you want students to access in the course. After you add
-a file, you must link to it from a component, a course update, or in the course
-handouts. A file is only visible to students if you create a link to it.
+You can upload files that you want students to access in the course. After you
+upload a file, you can link to it from a component, a course update, or in the
+course handouts. A file is only visible to students if you create a link to it.
 
 Because the file name becomes part of the URL, students can see the name of the
 file when they open it. Avoid using file names such as AnswerKey.pdf.
@@ -41,24 +45,23 @@ file when they open it. Avoid using file names such as AnswerKey.pdf.
  Furthermore, do not add video or audio files, or large data sets that are to be used by students. You should use YouTube or another hosting service to host multimedia files for your course. For storing large data sets for student use, contact your edX Program Manager.
   
 
-
 To add files:
  
 #. From the **Content** menu, select **Files & Uploads**.
 #. Click **Upload New File**.
 #. In the **Upload New File** dialog box, click **Choose File**.
-#. In the **Open** dialog box, select one more files that you want to upload,
+#. In the **Open** dialog box, select the file that you want to upload,
    then click **Open**.
 
    .. note:: 
      If you upload a file with the same name as an existing course file
      the original file is overwritten without warning.
 
-#. To add more file, click **Load Another File** and repeat the previous step.
+#. To add another file, click **Load Another File** and repeat the previous step.
 #. To close the dialog box, click the **x** in the top right corner. 
 
-When you close the dialog box, the new files appear on the **Files & Uploads**
-page.
+When you close the dialog box, the new files are listed on the **Files &
+Uploads** page.
 
 .. _File URLs:
 
@@ -66,47 +69,79 @@ page.
 File URLs
 *******************
 
-In the Files & Uploads page, each file has has an **Embed URL** and an
-**External URL**:
-
+On the Files & Uploads page, in the URL column, the Studio URL and Web URL are
+listed for each file.
 
 .. image:: ../Images/files_uploads_urls.png
- :alt: Image of the Files and Uploads page, with Embed URL and External URL
-     columns circled
+ :alt: Image of the Files and Uploads page, with URLs circled
 
-* You use the **Embed URL** to link to the file or image from a component, a
-  course update, or a course handout.
+* You use the **Studio URL** to link to the file or image from a component, a
+course update, or a course handout.
 
-* You use the **External URL** to reference the file or image from outside of
-  your course. The external URL does not work if you lock the file unless the
+* You use the **Web URL** to reference the file or image from outside of
+  your course. The Web URL does not work if you lock the file, unless the
   person accessing the URL is enrolled in the course.
 
-  .. warning:: You cannot use the External URL as the reference to a file or
+  .. warning:: You cannot use the Web URL as the reference to a file or
    image from within your course.
 
-You can double click a value in the **Embed URL** or **External URL** column to select the value, then copy it.
+To copy a URL from the file list, select it by double clicking the URL in the
+**URL** column, then copying it.
 
 .. _Sort Files:
 
-*******************
+*********************
 Sort Files
-*******************
+*********************
 
-By default, files are sorted by the **Date Added** column, with the most
-recently added first.
+On the **Files & Uploads** page, by default, files are sorted by the **Date
+Added** column, with the most recently added files at the top.
 
-Alternatively, can also sort the list by the **Name** column by clicking on the
-column header.
+You can sort your files by any column that has a blue column header. For
+example, to sort the list by Name, click on the **Name** column header.
 
-For either the the **Date Added** or **Name** column, you can switch the sort
-order from descending to ascending, and back, by clicking the column header a
-second time.
+Change the sort order by clicking a sortable column header. The direction of the
+arrow in the column header indicates whether the order is ascending or
+descending. Each time you click the column header, the sort order reverses.
 
 The current sort order is shown at the top of the file list, and the active sort
-column header is underlined:
+column header is underlined.
 
-.. image:: ../Images/file_sort.png
-  :alt: Sorting files in the Files & Uploads page
+
+.. _Filter Files:
+
+*********************
+Filter Files
+*********************
+
+You can filter the list of files by type, so that only a selected type of file
+is visible. The list remains sorted by the current sort order.
+
+
+.. list-table::
+   :widths: 10 20
+
+   * - **Type**
+     - **File Types Include**
+   * - Images
+     - gif, jpg, jpeg, png, tiff
+   * - Documents
+     - pdf, txt
+   * - Other
+     - Files not included in the other types, such as sjson, html, js
+
+
+To filter the list of files by type:
+ 
+#. On the **Files & Uploads** page, click the **Type** column header.
+#. In the dropdown list, select the type of file you want to view. 
+
+The list refreshes to show only the type of file you selected, and the column
+header changes to reflect the type of file you have filtered by.
+
+To reset the list and view files of all types, click **Show All** in the **Type**
+dropdown list.
+
 
 .. _Find Files:
 
@@ -144,7 +179,7 @@ people not enrolled in your class.
 To ensure that those not in your class cannot view the file, click the lock
 icon.
 
-.. note:: The external URL does not work if you lock the file.
+.. note:: The Web URL does not work if you lock the file.
  
 .. _Delete a File:
 
@@ -156,5 +191,5 @@ To delete a file, click the **x** icon next to the file.  You are prompted to
 confirm the deletion.
 
 .. warning:: If you have links to a file you delete, those links will be broken.
- Ensure you change those links before deleting the file.
+ Make sure you change those links before deleting the file.
  

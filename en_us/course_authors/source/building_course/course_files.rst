@@ -126,7 +126,8 @@ is visible. The list remains sorted by the current sort order.
    * - Images
      - gif, jpg, jpeg, png, tiff
    * - Documents
-     - pdf, txt
+     - pdf, txt, MS Office and Open Office documents, presentations,or
+       spreadsheets
    * - Other
      - Files not included in the other types, such as sjson, html, js
 
